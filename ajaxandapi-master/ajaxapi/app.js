@@ -61,7 +61,7 @@ axios
 	})
 	.catch((err) => {
 		console.log(err);
-		alert(err.message);
+		alert(err);
 	});
 
 axios
@@ -85,3 +85,9 @@ const getPeople = async (id) => {
 		console.log(error.response.data);
 	}
 };
+
+axios.get('https://swapi.dev/api/people/1/').then((res) => {
+	console.log(res)
+}).catch((err) => {
+	console.log(err)
+});

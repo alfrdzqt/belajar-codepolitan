@@ -1,12 +1,15 @@
-const jokes = document.querySelector('#jokes');
+const jokes = document.querySelectorAll('#jokes');
 const button = document.querySelector('button');
 
 const addJoke = async () => {
 	const jokeText = await getJokes();
 	const newLI = document.createElement('LI');
 	newLI.append(jokeText);
-	jokes.append(newLI);
-};
+	document.querySelector('#jokes')
+	.append(newLI);
+}
+
+
 
 const getJokes = async () => {
 	try {
@@ -15,11 +18,12 @@ const getJokes = async () => {
 				Accept: 'application/json',
 			},
 		};
-		const res = await axios.get('https://icanhazdadjoke123123.com/', config);
+		const res = await axios.get('https://icanhazdadjoke.com123/', config);
 		return res.data.joke;
 	} catch (error) {
-		return 'No Jokes Available!';
+		return 'oops! something went wrong';
 	}
-};
+};	
+
 
 button.addEventListener('click', addJoke);
