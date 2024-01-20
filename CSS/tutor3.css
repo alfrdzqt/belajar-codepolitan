@@ -1,0 +1,18 @@
+div {
+    width: 200px;
+    padding: 50px;
+    margin: 20px;
+
+}
+
+div {
+    border-top-style: double;
+    border-right-style: groove;
+    border-bottom-style: inset;
+    border-left-style: ridge;
+    border-width: 10px;
+    border-top-width: 15px;
+    border-bottom-width: 15px;
+    border-color: brown;
+    
+}    

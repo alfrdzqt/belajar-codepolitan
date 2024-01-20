@@ -1,0 +1,46 @@
+body {
+  color: #03aec6;
+  background: #01294d;
+  font-family: verdana, sans-serif;
+}
+
+.scoreboard {
+  min-height: 100vh;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: px;
+  font-weight: 800;
+}
+
+.points p {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  background: #03aec6;
+  color: #01294d;
+  min-width: 205px;
+}
+
+.btn-primary {
+  background: transparent;
+  color: #9aabd8;
+  border-color: #9aabd8;
+  font-size: 1.5em;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  color: #fff;
+  background-color: #03aec6;
+  border-color: #03aec6;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #03aec6;
+  border-color: #03aec6;
+  box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 50%);
+}

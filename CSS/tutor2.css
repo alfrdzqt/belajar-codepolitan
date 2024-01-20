@@ -1,0 +1,27 @@
+.Jokes {
+  font-size: 50px;
+  color: aqua;
+}
+
+.Judul {
+  font-size: 50%;
+  color: blue;
+}
+.Jokes:active {
+  color: red;
+}
+a + button {
+  color: red;
+}
+input[type="text"] {
+  color: purple;
+}
+
+.Jokes p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+section button:hover {
+  background-color: blue;
+}

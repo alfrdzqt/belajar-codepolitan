@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: chocolate;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: blue;
+    flex: 1 2 300px;
+}
+
+main .content {
+    background-color: blueviolet;
+    flex: 2 1 800px;
+}
